@@ -55,9 +55,10 @@ cp lib/example.jar $stagingDir/lib/
 ## Parcel build steps
 #####################
 # validate the parcel
+pushd $BUILD_DIR
 #java -jar $CM_EXT/validator/target/validator.jar -d $stagingDir/
 # create parcel
-tar -zcf ${parcelName}-${OS}.parcel --owner root --group root $stagingDir/
+tar -zcf ${parcelName}-${OS}.parcel --owner root --group root $parcelName/
 # install in http dir
 mv ${parcelName}-${OS}.parcel $PARCEL_REPO/
 # regen manifest
