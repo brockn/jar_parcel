@@ -7,7 +7,6 @@ CM_EXT=${CM_EXT:-/opt/local/cm_ext/}
 PARCEL_REPO=${PARCEL_REPO:-/var/www/html/parcels/}
 SRC_DIR=$PWD
 BUILD_DIR=${BUILD_DIR:-$SRC_DIR/target}
-DOWNLOAD_DIR=${DOWNLOAD_DIR:-$SRC_DIR/downloads}
 # OS this parcel supports
 OS=el6
 # version
