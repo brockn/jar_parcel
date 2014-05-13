@@ -1,0 +1,33 @@
+{
+  "schema_version":     0,
+  "name":               "custom-jars",
+  "version":            "%VERSION%",
+  "extraVersionInfo": {
+    "fullVersion":        "%VERSION%-%OS%",
+    "baseVersion":        "1.0.0"
+  },
+
+  "setActiveSymlink":   true,
+
+  "scripts": {
+
+  },
+
+  "packages": [
+
+  ],
+  "components": [
+    { "name":    "custom-jars",
+      "version": "%VERSION%",
+      "pkg_version": "%VERSION%"
+    }
+  ],
+
+  "provides": [
+    "custom-jars"
+  ],
+
+  "users": { },
+
+  "groups": [ ]
+}
