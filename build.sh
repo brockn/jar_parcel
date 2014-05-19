@@ -12,7 +12,7 @@ OS=el6
 # version
 version=1.0.0.$(date +%Y%m%d.%H%M)
 # name of pracel
-parcelName=custom-jars-$version
+parcelName=custom_jars-$version
 # dir we will tar to make the parcel
 stagingDir=$BUILD_DIR/$parcelName
 
@@ -43,6 +43,7 @@ cp -R meta $stagingDir
 # update the parcel.json with the correct version/os
 perl -i -pe "s@%VERSION%@$version@g" $stagingDir/meta/parcel.json
 perl -i -pe "s@%OS%@$OS@g" $stagingDir/meta/parcel.json
+perl -i -pe "s@%PARCEL_NAME%@$parcelName@g" $stagingDir/meta/custom_env.sh
 
 #####################
 ## Jar build steps

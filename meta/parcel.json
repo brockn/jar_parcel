@@ -1,30 +1,31 @@
 {
-  "schema_version":     0,
-  "name":               "custom-jars",
+  "name":               "custom_jars",
   "version":            "%VERSION%",
   "extraVersionInfo": {
     "fullVersion":        "%VERSION%-%OS%",
     "baseVersion":        "1.0.0"
   },
+  "minPrevVersion":     "",
+  "maxPrevVersion":     "",
 
   "setActiveSymlink":   true,
 
   "scripts": {
-
+    "defines": "custom_env.sh"
   },
 
   "packages": [
 
   ],
   "components": [
-    { "name":    "custom-jars",
+    { "name":    "custom_jars",
       "version": "%VERSION%",
       "pkg_version": "%VERSION%"
     }
   ],
 
   "provides": [
-    "custom-jars"
+    "custom_jars"
   ],
 
   "users": { },
